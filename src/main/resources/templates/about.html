@@ -1,28 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{Base :: parent(~{::#content}, ~{::title})}">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Page</title>
   </head>
   <body>
-    <h1>This is about page</h1>
-    <hr />
-    <!-- Using Fragment -->
-    <div
-      class="host-tag"
-      data-th-replace="${isLogin} ? ~{base :: parent(~{::section})} : ~{base :: test}"
-    >
-      <section>
-        <h1>User is logged in...</h1>
-        <h2>Dynamic Content</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-          delectus eaque perspiciatis, qui rerum omnis obcaecati laborum esse
-          dolor nihil!
-        </p>
-        <button>Dynamic Content</button>
-      </section>
+    <div id="content">
+      <h1>Welcome to About Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, fuga.
+      </p>
     </div>
   </body>
 </html>
