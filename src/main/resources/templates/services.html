@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is Service Page</h1>
+
+    <!-- Using Fragment -->
+    <div class="host-tag" data-th-replace="~{base :: parent(~{::section})}">
+      <section>
+        <h1>This is Dynamic Content</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          maiores veniam, mollitia facere incidunt sed atque laborum accusantium
+          eaque ab?
+        </p>
+        <button>Click Here!!!</button>
+      </section>
+    </div>
+  </body>
+</html>
